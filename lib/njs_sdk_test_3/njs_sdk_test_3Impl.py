@@ -3,7 +3,7 @@
 import os
 from pprint import pformat
 from biokbase.workspace.client import Workspace as workspaceService  # @UnresolvedImport @IgnorePep8
-from njs_sdk_test_1.GenericClient import GenericClient, ServerError
+from njs_sdk_test_3.GenericClient import GenericClient, ServerError
 import time
 from multiprocessing.pool import ThreadPool, ApplyResult
 import traceback
@@ -139,6 +139,10 @@ class njs_sdk_test_3:
             })
             self.log('result:')
             self.log(info)
+        if 'ret' in params:
+            ws = workspaceService(self.workspaceURL, token=token)
+            results['ret'] = ws.get_objects(
+                {'objects': [{'ref': params['ret']}]})
         if 'except' in params:
             raise ValueError(params.get('except') + ' ' + self.id_)
         #END run

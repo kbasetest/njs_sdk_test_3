@@ -1,7 +1,7 @@
-SERVICE = njs_sdk_test_1
-SERVICE_CAPS = njs_sdk_test_1
-SPEC_FILE = njs_sdk_test_1.spec
-URL = https://kbase.us/services/njs_sdk_test_1
+SERVICE = njs_sdk_test_3
+SERVICE_CAPS = njs_sdk_test_3
+SPEC_FILE = njs_sdk_test_3.spec
+URL = https://kbase.us/services/njs_sdk_test_3
 DIR = $(shell pwd)
 LIB_DIR = lib
 SCRIPTS_DIR = scripts

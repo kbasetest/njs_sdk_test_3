@@ -1,4 +1,4 @@
-package njs_sdk_test_1::njs_sdk_test_1Client;
+package njs_sdk_test_3::njs_sdk_test_3Client;
 
 use JSON::RPC::Client;
 use POSIX;
@@ -21,7 +21,7 @@ our $VERSION = "0.1.0";
 
 =head1 NAME
 
-njs_sdk_test_1::njs_sdk_test_1Client
+njs_sdk_test_3::njs_sdk_test_3Client
 
 =head1 DESCRIPTION
 
@@ -37,7 +37,7 @@ sub new
     
 
     my $self = {
-	client => njs_sdk_test_1::njs_sdk_test_1Client::RpcClient->new,
+	client => njs_sdk_test_3::njs_sdk_test_3Client::RpcClient->new,
 	url => $url,
 	headers => [],
     };
@@ -167,7 +167,7 @@ $results is an UnspecifiedObject, which can hold any non-null object
     }
 
     my $result = $self->{client}->call($self->{url}, $self->{headers}, {
-	method => "njs_sdk_test_1.run",
+	method => "njs_sdk_test_3.run",
 	params => \@args,
     });
     if ($result) {
@@ -193,7 +193,7 @@ $results is an UnspecifiedObject, which can hold any non-null object
 sub version {
     my ($self) = @_;
     my $result = $self->{client}->call($self->{url}, $self->{headers}, {
-        method => "njs_sdk_test_1.version",
+        method => "njs_sdk_test_3.version",
         params => [],
     });
     if ($result) {
@@ -236,10 +236,10 @@ sub _validate_version {
         );
     }
     if ($sMinor > $cMinor) {
-        warn "New client version available for njs_sdk_test_1::njs_sdk_test_1Client\n";
+        warn "New client version available for njs_sdk_test_3::njs_sdk_test_3Client\n";
     }
     if ($sMajor == 0) {
-        warn "njs_sdk_test_1::njs_sdk_test_1Client version is $svr_version. API subject to change.\n";
+        warn "njs_sdk_test_3::njs_sdk_test_3Client version is $svr_version. API subject to change.\n";
     }
 }
 
@@ -249,7 +249,7 @@ sub _validate_version {
 
 =cut
 
-package njs_sdk_test_1::njs_sdk_test_1Client::RpcClient;
+package njs_sdk_test_3::njs_sdk_test_3Client::RpcClient;
 use base 'JSON::RPC::Client';
 use POSIX;
 use strict;

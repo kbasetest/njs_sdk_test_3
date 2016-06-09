@@ -1,4 +1,4 @@
-package us.kbase.njssdktest1;
+package us.kbase.njssdktest3;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import java.io.File;
@@ -14,19 +14,19 @@ import us.kbase.common.service.UObject;
 import us.kbase.common.service.UnauthorizedException;
 
 /**
- * <p>Original spec-file module name: njs_sdk_test_1</p>
+ * <p>Original spec-file module name: njs_sdk_test_3</p>
  * <pre>
  * Module for testing NJSwrapper
  * </pre>
  */
-public class NjsSdkTest1Client {
+public class NjsSdkTest3Client {
     private JsonClientCaller caller;
 
 
     /** Constructs a client with a custom URL and no user credentials.
      * @param url the URL of the service.
      */
-    public NjsSdkTest1Client(URL url) {
+    public NjsSdkTest3Client(URL url) {
         caller = new JsonClientCaller(url);
     }
     /** Constructs a client with a custom URL.
@@ -36,7 +36,7 @@ public class NjsSdkTest1Client {
      * @throws IOException if an IOException occurs when checking the token's
      * validity.
      */
-    public NjsSdkTest1Client(URL url, AuthToken token) throws UnauthorizedException, IOException {
+    public NjsSdkTest3Client(URL url, AuthToken token) throws UnauthorizedException, IOException {
         caller = new JsonClientCaller(url, token);
     }
 
@@ -48,7 +48,7 @@ public class NjsSdkTest1Client {
      * @throws IOException if an IOException occurs when checking the user's
      * credentials.
      */
-    public NjsSdkTest1Client(URL url, String user, String password) throws UnauthorizedException, IOException {
+    public NjsSdkTest3Client(URL url, String user, String password) throws UnauthorizedException, IOException {
         caller = new JsonClientCaller(url, user, password);
     }
 
@@ -152,7 +152,7 @@ public class NjsSdkTest1Client {
         List<Object> args = new ArrayList<Object>();
         args.add(params);
         TypeReference<List<UObject>> retType = new TypeReference<List<UObject>>() {};
-        List<UObject> res = caller.jsonrpcCall("njs_sdk_test_1.run", args, retType, true, true, jsonRpcContext);
+        List<UObject> res = caller.jsonrpcCall("njs_sdk_test_3.run", args, retType, true, true, jsonRpcContext);
         return res.get(0);
     }
 }

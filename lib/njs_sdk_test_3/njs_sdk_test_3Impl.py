@@ -10,10 +10,10 @@ import traceback
 #END_HEADER
 
 
-class njs_sdk_test_1:
+class njs_sdk_test_3:
     '''
     Module Name:
-    njs_sdk_test
+    njs_sdk_test_3
 
     Module Description:
     Module for testing NJSwrapper
@@ -25,9 +25,9 @@ class njs_sdk_test_1:
     # state. A method could easily clobber the state set by another while
     # the latter method is running.
     #########################################
-    VERSION = "0.0.1"
-    GIT_URL = "https://github.com/kbasetest/njs_sdk_test_1"
-    GIT_COMMIT_HASH = "f5b4986d4a2e7d6df1ff5794394e5c6c50b568a3"
+    VERSION = "0.0.3"
+    GIT_URL = ""
+    GIT_COMMIT_HASH = "7f58ce42731019c6adda00d710a991960dd38cf7"
     
     #BEGIN_CLASS_HEADER
     # Class variables and functions can be defined in this block
@@ -51,6 +51,10 @@ class njs_sdk_test_1:
     
 
     def run(self, ctx, params):
+        """
+        :param params: instance of unspecified object
+        :returns: instance of unspecified object
+        """
         # ctx is the context object
         # return variables are: results
         #BEGIN run

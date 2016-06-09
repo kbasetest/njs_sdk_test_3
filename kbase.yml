@@ -1,0 +1,15 @@
+module-name:
+    njs_sdk_test_1
+
+module-description:
+    Module for testing NJSwrapper
+
+service-language:
+    python
+
+module-version:
+    0.0.3
+
+owners:
+    [gaprice]
+

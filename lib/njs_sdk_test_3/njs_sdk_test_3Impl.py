@@ -141,8 +141,7 @@ class njs_sdk_test_3:
             self.log(info)
         if 'ret' in params:
             ws = workspaceService(self.workspaceURL, token=token)
-            results['ret'] = ws.get_objects(
-                {'objects': [{'ref': params['ret']}]})
+            results['ret'] = ws.get_objects([{'ref': params['ret']}])
         if 'except' in params:
             raise ValueError(params.get('except') + ' ' + self.id_)
         #END run

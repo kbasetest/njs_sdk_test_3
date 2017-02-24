@@ -28,7 +28,7 @@ class njs_sdk_test_3:
     ######################################### noqa
     VERSION = "0.0.3"
     GIT_URL = "https://github.com/rsutormin/njs_sdk_test_3"
-    GIT_COMMIT_HASH = "072221de9aae0fa29b69d8875324621e0ff2a395"
+    GIT_COMMIT_HASH = "a51f586720ff20126892c125ae5a1f14e7ea0eaf"
 
     #BEGIN_CLASS_HEADER
     # Class variables and functions can be defined in this block
